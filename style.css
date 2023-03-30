@@ -1,0 +1,20 @@
+.input {
+  background-color: #2d212a; 
+  width: 16vw;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.texto-resposta {
+  background-color: #181A1B;
+  width: 100%;
+}
+
+.button {
+  background-color: #6E2759;
+  padding: 0.5em;
+}
+
+.border-danger:focus {
+  outline: none;
+}
