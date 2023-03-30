@@ -4,6 +4,7 @@ function butaoPerguntaClicked() {
   const lista = [input1, input2];
 
   if (tentarNovamente === false) {
+    overlay.style.display = 'block';
     setTimeout(function() {
     tentarNovamente = true;
     butaoPergunta.innerHTML = 'Tentar Novamente';
@@ -15,6 +16,7 @@ function butaoPerguntaClicked() {
 
       campoInput.style.display = 'none';
       resposta.style.display = 'block';
+      overlay.style.display = 'none';
     }, 1000); 
   } else {
     tentarNovamente = false;
@@ -35,6 +37,7 @@ const campoInput = document.getElementById('campo-input');
 const resposta = document.getElementById('resposta');
 const textoInput1 = document.getElementById('texto-input-1');
 const textoInput2 = document.getElementById('texto-input-2');
+const overlay = document.querySelector(".overlay");
 
 let tentarNovamente = false;
 
